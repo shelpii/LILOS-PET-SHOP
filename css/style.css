@@ -54,12 +54,12 @@ body._lock {
     display: flex;
     min-height: 158px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
     position: relative;
     z-index: 5;
-    margin: 0px 229px 0px 0px;
     color: #3f2a1e;
     font-family: Poppins;
     font-size: 41px;
@@ -147,9 +147,7 @@ body._lock {
 }
 
 @media (max-width: 1023.98px) {
-    .header__container {
-        justify-content: space-between;
-    }
+
     .header__burger {
         display: block;
         position: relative;

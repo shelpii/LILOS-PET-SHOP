@@ -1,583 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/null.css" />
-        <title>LILO’S PET SHOP</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__container _container">
-                    <a href="#" class="header__logo"
-                        ><span>LILO’S</span> PET SHOP</a
-                    >
-                    <div class="header__burger">
-                        <span></span>
-                    </div>
-                    <nav class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Home</a>
-                            </li>
-                            <li class="menu__item">
-                                <a
-                                    data-gotto=".aboutus"
-                                    href="#"
-                                    class="menu__link"
-                                    >About Us</a
-                                >
-                            </li>
-                            <li class="menu__item">
-                                <a
-                                    data-gotto=".ourservices"
-                                    href="#"
-                                    class="menu__link"
-                                    >Our Products</a
-                                >
-                            </li>
-                            <li class="menu__item">
-                                <a
-                                    data-gotto=".footer"
-                                    href="#"
-                                    class="menu__link"
-                                    >Contact Us</a
-                                >
-                            </li>
-                        </ul>
-                        <ul class="social__list">
-                            <li class="social__item">
-                                <a href="#" class="social__link"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="34"
-                                        height="34"
-                                        viewBox="0 0 34 34"
-                                        fill="none"
-                                    >
-                                        <g clip-path="url(#clip0_667_125)">
-                                            <path
-                                                d="M17.1779 34C26.2883 34 33.6738 26.3888 33.6738 17C33.6738 7.61116 26.2883 0 17.1779 0C8.06739 0 0.681885 7.61116 0.681885 17C0.681885 26.3888 8.06739 34 17.1779 34Z"
-                                                fill="#3B5998"
-                                            />
-                                            <path
-                                                d="M21.325 17.6655H18.3815V28.7786H13.9218V17.6655H11.8008V13.7599H13.9218V11.2325C13.9218 9.42519 14.7549 6.59509 18.4212 6.59509L21.7246 6.60934V10.4004H19.3277C18.9346 10.4004 18.3818 10.6028 18.3818 11.465V13.7635H21.7146L21.325 17.6655Z"
-                                                fill="white"
-                                            />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_667_125">
-                                                <rect
-                                                    width="32.992"
-                                                    height="34"
-                                                    fill="white"
-                                                    transform="translate(0.681885)"
-                                                />
-                                            </clipPath>
-                                        </defs></svg
-                                ></a>
-                            </li>
-                            <li class="social__item">
-                                <a href="#" class="social__link"
-                                    ><svg
-                                        width="34"
-                                        height="34"
-                                        viewBox="0 0 34 34"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <g clip-path="url(#clip0_667_129)">
-                                            <path
-                                                d="M17.0042 34C26.3907 34 34 26.3888 34 17C34 7.61116 26.3907 0 17.0042 0C7.6176 0 0.00830078 7.61116 0.00830078 17C0.00830078 26.3888 7.6176 34 17.0042 34Z"
-                                                fill="#03A9F4"
-                                            />
-                                        </g>
-                                        <g clip-path="url(#clip1_667_129)">
-                                            <path
-                                                d="M28.7902 9.95959C27.9677 10.3205 27.0914 10.5596 26.1777 10.6758C27.1176 10.1144 27.835 9.23233 28.1723 8.16909C27.2959 8.69172 26.3283 9.06088 25.2971 9.26689C24.465 8.38063 23.279 7.83173 21.9852 7.83173C19.475 7.83173 17.454 9.86972 17.454 12.3681C17.454 12.7276 17.4845 13.0733 17.5591 13.4023C13.7896 13.2184 10.4541 11.4113 8.21345 8.65854C7.82227 9.3374 7.59281 10.1144 7.59281 10.9509C7.59281 12.5216 8.40144 13.9139 9.6068 14.72C8.87833 14.7061 8.16369 14.4946 7.55825 14.1614C7.55825 14.1752 7.55825 14.1932 7.55825 14.2112C7.55825 16.4151 9.12991 18.2457 11.1909 18.6674C10.8218 18.7683 10.4196 18.8167 10.0021 18.8167C9.71185 18.8167 9.41881 18.8001 9.14373 18.7393C9.7312 20.5353 11.3982 21.8557 13.3804 21.8986C11.8378 23.1056 9.87911 23.8328 7.75868 23.8328C7.38684 23.8328 7.03021 23.8163 6.67358 23.7706C8.68205 25.0661 11.0623 25.8059 13.6293 25.8059C21.9727 25.8059 26.5343 18.8927 26.5343 12.9004C26.5343 12.6999 26.5274 12.5064 26.5177 12.3142C27.4176 11.6754 28.1737 10.8776 28.7902 9.95959Z"
-                                                fill="white"
-                                            />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_667_129">
-                                                <rect
-                                                    width="33.9917"
-                                                    height="34"
-                                                    fill="white"
-                                                    transform="translate(0.00830078)"
-                                                />
-                                            </clipPath>
-                                            <clipPath id="clip1_667_129">
-                                                <rect
-                                                    width="22.1166"
-                                                    height="22.122"
-                                                    fill="white"
-                                                    transform="translate(6.67358 5.75781)"
-                                                />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <main class="main">
-                <section class="main__intro intro">
-                    <div class="intro__container _container">
-                        <div class="intro__body intro-body">
-                            <h1 class="intro-body__title">
-                                Your Best Friend Deserves the
-                            </h1>
-                            <p class="intro-body__subtitle">BEST LOVE</p>
-                            <p class="intro__body__text">
-                                We are excited to post contents on the website.
-                                This space is reserved for more information
-                                about the company. These dummy text is intended
-                                to show you the volume of content.
-                            </p>
-                            <div class="intro__body__buttons">
-                                <a href="#" class="intro__body__button"
-                                    >LEARN MORE</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="intro__image _ibg">
-                        <img src="./img/Intro/Cover.jpg" alt="cover" />
-                    </div>
-                </section>
-                <section class="main__aboutus aboutus">
-                    <div class="aboutus__container _container">
-                        <div class="aboutus__body">
-                            <div class="aboutus__content">
-                                <div class="aboutus__block-text block-text">
-                                    <h2
-                                        class="block-text__title aboutus__block-text__title"
-                                    >
-                                        Welcome to
-                                    </h2>
-                                    <div
-                                        class="block-text__subtitle aboutus__block-text__subtitle"
-                                    >
-                                        <span>Lilo’s</span><br />Pet Shop
-                                    </div>
-                                    <div class="block-text__text">
-                                        We are excited to post contents on the
-                                        website. This space is reserved for more
-                                        information about<br />
-                                        the company. These dummy text is
-                                        intended to show you the volume of
-                                        content that will be used<br />
-                                        on this particular page.
-                                    </div>
-                                    <div class="block-text__text">
-                                        Thank you for visiting our website.
-                                        These contents are temporary and are for
-                                        display purposes<br />
-                                        only. We can post company information
-                                        here. We are excited to post contents on
-                                        the website.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="aboutus__media">
-                                <div class="aboutus__media__image">
-                                    <img
-                                        src="./img/about-us/Hello.png"
-                                        alt="hello"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="main__ourservices ourservices">
-                    <div class="ourservices__container _container">
-                        <div class="oursevices__block-text block-text">
-                            <h2 class="block-text__title">
-                                Place a Sub-Heading Text Here
-                            </h2>
-                            <div
-                                class="block-text__subtitle ourservices__block-text__subtitle"
-                            >
-                                Our Services
-                            </div>
-                            <div class="block-text__text">
-                                We are excited to post contents on the website.
-                                This space is reserved for more information<br />
-                                about the company. These dummy text is intended
-                                to show you the volume of content.
-                            </div>
-                        </div>
-                        <div class="ourservices__body">
-                            <div class="ourservices__colum">
-                                <div
-                                    class="ourservices__item ourservices__item__brown item-ourservices"
-                                >
-                                    <div class="item-ourservices__icon">
-                                        <img
-                                            src="./img/our-services/colum/01.png"
-                                            alt="pow"
-                                        />
-                                    </div>
-                                    <div
-                                        class="item-ourservices__horline"
-                                    ></div>
-                                    <div
-                                        class="item-ourservices__text item-ourservices__text__brown"
-                                    >
-                                        Dummy <span>Service</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ourservices__colum">
-                                <div class="ourservices__item item-ourservices">
-                                    <div class="item-ourservices__icon">
-                                        <img
-                                            src="./img/our-services/colum/02.png"
-                                            alt="pow"
-                                        />
-                                    </div>
-                                    <div
-                                        class="item-ourservices__horline"
-                                    ></div>
-                                    <div class="item-ourservices__text">
-                                        Dummy <span>Service</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ourservices__colum">
-                                <div class="ourservices__item item-ourservices">
-                                    <div class="item-ourservices__icon">
-                                        <img
-                                            src="./img/our-services/colum/03.png"
-                                            alt="pow"
-                                        />
-                                    </div>
-                                    <div
-                                        class="item-ourservices__horline"
-                                    ></div>
-                                    <div class="item-ourservices__text">
-                                        Dummy <span>Service</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ourservices__colum">
-                                <div class="ourservices__item item-ourservices">
-                                    <div class="item-ourservices__icon">
-                                        <img
-                                            src="./img/our-services/colum/04.png"
-                                            alt="pow"
-                                        />
-                                    </div>
-                                    <div
-                                        class="item-ourservices__horline"
-                                    ></div>
-                                    <div class="item-ourservices__text">
-                                        Dummy <span>Service</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ourservices__image _ibg">
-                        <img src="./img/our-services/cover.svg" alt="cover" />
-                    </div>
-                </section>
-                <section class="main__getstarted getstarted">
-                    <div class="getstarted__container _container">
-                        <div class="getstarted__block-text block-text">
-                            <h2 class="block-text__title">
-                                Place a Sub-Heading Text Here
-                            </h2>
-                            <div
-                                class="block-text__subtitle getstarted__block-text__subtitle"
-                            >
-                                Get Started Now
-                            </div>
-                            <div class="block-text__text">
-                                We are excited to post contents on the website.
-                                This space is reserved for more information
-                                about the company.
-                            </div>
-                        </div>
-                        <div class="getstarted__body">
-                            <div class="getstarted__colum">
-                                <div class="getstarted__item item-getstarted">
-                                    <div class="item-getstarted__image">
-                                        <img
-                                            src="./img/get-started/colum/01.png"
-                                            alt="pets"
-                                            width="298"
-                                            height="301"
-                                        />
-                                    </div>
-                                    <div class="item-getstarted__content">
-                                        <div class="item-getstarted__title">
-                                            Refer a Friend
-                                        </div>
-                                        <div class="item-getstarted__text">
-                                            These dummy text is intended to show
-                                            you<br />
-                                            the volume of content.
-                                        </div>
-                                        <div
-                                            class="item-getstarted__horline"
-                                        ></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="getstarted__colum">
-                                <div class="getstarted__item item-getstarted">
-                                    <div class="item-getstarted__image">
-                                        <img
-                                            src="./img/get-started/colum/02.png"
-                                            alt="pets"
-                                            width="298"
-                                            height="301"
-                                        />
-                                    </div>
-                                    <div class="item-getstarted__content">
-                                        <div class="item-getstarted__title">
-                                            Refer a Friend
-                                        </div>
-                                        <div class="item-getstarted__text">
-                                            These dummy text is intended to show
-                                            you<br />
-                                            the volume of content.
-                                        </div>
-                                        <div
-                                            class="item-getstarted__horline"
-                                        ></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="getstarted__colum">
-                                <div class="getstarted__item item-getstarted">
-                                    <div class="item-getstarted__image">
-                                        <img
-                                            src="./img/get-started/colum/03.png"
-                                            alt="pets"
-                                            width="298"
-                                            height="301"
-                                        />
-                                    </div>
-                                    <div class="item-getstarted__content">
-                                        <div class="item-getstarted__title">
-                                            Refer a Friend
-                                        </div>
-                                        <div class="item-getstarted__text">
-                                            These dummy text is intended to show
-                                            you<br />
-                                            the volume of content.
-                                        </div>
-                                        <div
-                                            class="item-getstarted__horline"
-                                        ></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="main__ourmission ourmission">
-                    <div class="ourmission__container _container">
-                        <div class="ourmission__content">
-                            <div class="ourmission__block-text block-text">
-                                <h2 class="block-text__title">
-                                    Place a Sub-Heading Text Here
-                                </h2>
-                                <div
-                                    class="block-text__subtitle ourmission__block-text__subtitle"
-                                >
-                                    Our Mission
-                                </div>
-                                <div class="block-text__text">
-                                    We are excited to post contents on the
-                                    website. This space is reserved for more
-                                    information about the company. These dummy
-                                    text is intended to show you the volume of
-                                    content.
-                                </div>
-                            </div>
-                            <div class="ourmission__buttons">
-                                <a href="#" class="ourmission__button"
-                                    >About Us</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ourmission__image _ibg">
-                        <img src="./img/our-mission/cover.jpg" alt="cover" />
-                    </div>
-                </section>
-                <section class="main__submit submit">
-                    <div class="submit__container _container">
-                        <div class="submit__block-text block-text">
-                            <h2 class="block-text__title">Reach Out to Us</h2>
-                            <div
-                                class="block-text__subtitle submit__block-text__subtitle"
-                            >
-                                Drop Your Message
-                            </div>
-                            <div class="block-text__text">
-                                We are excited to post contents on the website.
-                                This space is reserved for more information
-                                about the company.
-                            </div>
-                        </div>
-                        <form action="#" class="submit__form">
-                            <input
-                                type="text"
-                                class="submit__input"
-                                placeholder="Full Name"
-                                required
-                                autocomplete="off"
-                                name="form[]"
-                            />
-                            <input
-                                type="text"
-                                class="submit__input"
-                                placeholder="Email Address"
-                                required
-                                autocomplete="off"
-                                name="form[]"
-                            />
-                            <input
-                                type="text"
-                                class="submit__input"
-                                placeholder="Message"
-                                required
-                                autocomplete="off"
-                                name="form[]"
-                            />
-                            <button type="submit" class="submit__button">
-                                SUBMIT
-                            </button>
-                        </form>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="footer__container _container">
-                    <div class="footer__body">
-                        <div class="footer__image">
-                            <img
-                                src="./img/footer/image/welcome to.png"
-                                alt="pet"
-                            />
-                        </div>
-                        <div class="footer__content">
-                            <div class="footer__content_top">
-                                <div class="footer__block-text block-text">
-                                    <h2
-                                        class="block-text__title footer__block-text__title"
-                                    >
-                                        Get In Touch
-                                    </h2>
-                                    <div
-                                        class="block-text__subtitle footer__block-text__subtitle"
-                                    >
-                                        Contact Us!
-                                    </div>
-                                    <div
-                                        class="block-text__text footer__block-text__text"
-                                    >
-                                        We are excited to post contents on the
-                                        website. This space is reserved for
-                                        more<br />
-                                        information about the company.
-                                    </div>
-                                </div>
-                                <div class="content__body">
-                                    <div class="content__colum">
-                                        <div class="content__item item-content">
-                                            <div class="item-content__icon">
-                                                <img
-                                                    src="./img/footer/icon/location.svg"
-                                                    alt="location"
-                                                />
-                                            </div>
-                                            <div class="item-content__contacts">
-                                                <a
-                                                    href="#"
-                                                    class="item-content__contacts_map"
-                                                    >123 Street Name, Address
-                                                    City Name, State 12345</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content__colum">
-                                        <div class="content__item item-content">
-                                            <div class="item-content__icon">
-                                                <img
-                                                    src="./img/footer/icon/mail.svg"
-                                                    alt="location"
-                                                />
-                                            </div>
-                                            <div class="item-content__contacts">
-                                                <a
-                                                    href="tel:1234567890"
-                                                    class="item-content__contacts_phone"
-                                                    >Phone Number:
-                                                    123-456-7890</a
-                                                >
-                                                <a
-                                                    href="meilto:info@samplemail.com"
-                                                    class="item-content__contacts_email"
-                                                    >Email:
-                                                    info@samplemail.com</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer__bottom">
-                                <nav class="footer__bottom_menu">
-                                    <ul class="footer__list">
-                                        <li class="footer__link">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="footer__link">
-                                            <a href="#">About Us</a>
-                                        </li>
-                                        <li class="footer__link">
-                                            <a href="#">Our Products</a>
-                                        </li>
-                                        <li class="footer__link">
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <div class="footer__bottom_horline"></div>
-                                <div class="footer__bottom_copy">
-                                    © Copyright 2021 | Lilo’s Pet Shop | All
-                                    Right Reserved
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/null.css" />
+    <title>LILO’S PET SHOP</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <a href="#" class="header__logo"><span>LILO’S</span> PET SHOP</a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link" data-gotto=".home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a data-gotto=".aboutus" href="#" class="menu__link"
+                  >About Us</a
+                >
+              </li>
+              <li class="menu__item">
+                <a data-gotto=".ourservices" href="#" class="menu__link"
+                  >Our Products</a
+                >
+              </li>
+              <li class="menu__item">
+                <a data-gotto=".footer" href="#" class="menu__link"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_667_125)">
+                      <path
+                        d="M17.1779 34C26.2883 34 33.6738 26.3888 33.6738 17C33.6738 7.61116 26.2883 0 17.1779 0C8.06739 0 0.681885 7.61116 0.681885 17C0.681885 26.3888 8.06739 34 17.1779 34Z"
+                        fill="#3B5998"
+                      />
+                      <path
+                        d="M21.325 17.6655H18.3815V28.7786H13.9218V17.6655H11.8008V13.7599H13.9218V11.2325C13.9218 9.42519 14.7549 6.59509 18.4212 6.59509L21.7246 6.60934V10.4004H19.3277C18.9346 10.4004 18.3818 10.6028 18.3818 11.465V13.7635H21.7146L21.325 17.6655Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_667_125">
+                        <rect
+                          width="32.992"
+                          height="34"
+                          fill="white"
+                          transform="translate(0.681885)"
+                        />
+                      </clipPath>
+                    </defs></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link"
+                  ><svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_667_129)">
+                      <path
+                        d="M17.0042 34C26.3907 34 34 26.3888 34 17C34 7.61116 26.3907 0 17.0042 0C7.6176 0 0.00830078 7.61116 0.00830078 17C0.00830078 26.3888 7.6176 34 17.0042 34Z"
+                        fill="#03A9F4"
+                      />
+                    </g>
+                    <g clip-path="url(#clip1_667_129)">
+                      <path
+                        d="M28.7902 9.95959C27.9677 10.3205 27.0914 10.5596 26.1777 10.6758C27.1176 10.1144 27.835 9.23233 28.1723 8.16909C27.2959 8.69172 26.3283 9.06088 25.2971 9.26689C24.465 8.38063 23.279 7.83173 21.9852 7.83173C19.475 7.83173 17.454 9.86972 17.454 12.3681C17.454 12.7276 17.4845 13.0733 17.5591 13.4023C13.7896 13.2184 10.4541 11.4113 8.21345 8.65854C7.82227 9.3374 7.59281 10.1144 7.59281 10.9509C7.59281 12.5216 8.40144 13.9139 9.6068 14.72C8.87833 14.7061 8.16369 14.4946 7.55825 14.1614C7.55825 14.1752 7.55825 14.1932 7.55825 14.2112C7.55825 16.4151 9.12991 18.2457 11.1909 18.6674C10.8218 18.7683 10.4196 18.8167 10.0021 18.8167C9.71185 18.8167 9.41881 18.8001 9.14373 18.7393C9.7312 20.5353 11.3982 21.8557 13.3804 21.8986C11.8378 23.1056 9.87911 23.8328 7.75868 23.8328C7.38684 23.8328 7.03021 23.8163 6.67358 23.7706C8.68205 25.0661 11.0623 25.8059 13.6293 25.8059C21.9727 25.8059 26.5343 18.8927 26.5343 12.9004C26.5343 12.6999 26.5274 12.5064 26.5177 12.3142C27.4176 11.6754 28.1737 10.8776 28.7902 9.95959Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_667_129">
+                        <rect
+                          width="33.9917"
+                          height="34"
+                          fill="white"
+                          transform="translate(0.00830078)"
+                        />
+                      </clipPath>
+                      <clipPath id="clip1_667_129">
+                        <rect
+                          width="22.1166"
+                          height="22.122"
+                          fill="white"
+                          transform="translate(6.67358 5.75781)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <script src="./js/script.js"></script>
-    </body>
+      </header>
+      <main class="main">
+        <section class="main__intro intro">
+          <div class="intro__container _container">
+            <div class="intro__body intro-body">
+              <h1 class="intro-body__title">Your Best Friend Deserves the</h1>
+              <p class="intro-body__subtitle">BEST LOVE</p>
+              <p class="intro__body__text">
+                We are excited to post contents on the website. This space is
+                reserved for more information about the company. These dummy
+                text is intended to show you the volume of content.
+              </p>
+              <div class="intro__body__buttons">
+                <a href="#" class="intro__body__button">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="intro__image _ibg">
+            <img src="./img/Intro/Cover.jpg" alt="cover" />
+          </div>
+        </section>
+        <section class="main__aboutus aboutus">
+          <div class="aboutus__container _container">
+            <div class="aboutus__body">
+              <div class="aboutus__content">
+                <div class="aboutus__block-text block-text">
+                  <h2 class="block-text__title aboutus__block-text__title">
+                    Welcome to
+                  </h2>
+                  <div
+                    class="block-text__subtitle aboutus__block-text__subtitle"
+                  >
+                    <span>Lilo’s</span><br />Pet Shop
+                  </div>
+                  <div class="block-text__text">
+                    We are excited to post contents on the website. This space
+                    is reserved for more information about<br />
+                    the company. These dummy text is intended to show you the
+                    volume of content that will be used<br />
+                    on this particular page.
+                  </div>
+                  <div class="block-text__text">
+                    Thank you for visiting our website. These contents are
+                    temporary and are for display purposes<br />
+                    only. We can post company information here. We are excited
+                    to post contents on the website.
+                  </div>
+                </div>
+              </div>
+              <div class="aboutus__media">
+                <div class="aboutus__media__image">
+                  <img src="./img/about-us/Hello.png" alt="hello" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__ourservices ourservices">
+          <div class="ourservices__container _container">
+            <div class="oursevices__block-text block-text">
+              <h2 class="block-text__title">Place a Sub-Heading Text Here</h2>
+              <div
+                class="block-text__subtitle ourservices__block-text__subtitle"
+              >
+                Our Services
+              </div>
+              <div class="block-text__text">
+                We are excited to post contents on the website. This space is
+                reserved for more information<br />
+                about the company. These dummy text is intended to show you the
+                volume of content.
+              </div>
+            </div>
+            <div class="ourservices__body">
+              <div class="ourservices__colum">
+                <div
+                  class="ourservices__item ourservices__item__brown item-ourservices"
+                >
+                  <div class="item-ourservices__icon">
+                    <img src="./img/our-services/colum/01.png" alt="pow" />
+                  </div>
+                  <div class="item-ourservices__horline"></div>
+                  <div
+                    class="item-ourservices__text item-ourservices__text__brown"
+                  >
+                    Dummy <span>Service</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ourservices__colum">
+                <div class="ourservices__item item-ourservices">
+                  <div class="item-ourservices__icon">
+                    <img src="./img/our-services/colum/02.png" alt="pow" />
+                  </div>
+                  <div class="item-ourservices__horline"></div>
+                  <div class="item-ourservices__text">
+                    Dummy <span>Service</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ourservices__colum">
+                <div class="ourservices__item item-ourservices">
+                  <div class="item-ourservices__icon">
+                    <img src="./img/our-services/colum/03.png" alt="pow" />
+                  </div>
+                  <div class="item-ourservices__horline"></div>
+                  <div class="item-ourservices__text">
+                    Dummy <span>Service</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ourservices__colum">
+                <div class="ourservices__item item-ourservices">
+                  <div class="item-ourservices__icon">
+                    <img src="./img/our-services/colum/04.png" alt="pow" />
+                  </div>
+                  <div class="item-ourservices__horline"></div>
+                  <div class="item-ourservices__text">
+                    Dummy <span>Service</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ourservices__image _ibg">
+            <img src="./img/our-services/cover.svg" alt="cover" />
+          </div>
+        </section>
+        <section class="main__getstarted getstarted">
+          <div class="getstarted__container _container">
+            <div class="getstarted__block-text block-text">
+              <h2 class="block-text__title">Place a Sub-Heading Text Here</h2>
+              <div
+                class="block-text__subtitle getstarted__block-text__subtitle"
+              >
+                Get Started Now
+              </div>
+              <div class="block-text__text">
+                We are excited to post contents on the website. This space is
+                reserved for more information about the company.
+              </div>
+            </div>
+            <div class="getstarted__body">
+              <div class="getstarted__colum">
+                <div class="getstarted__item item-getstarted">
+                  <div class="item-getstarted__image">
+                    <img
+                      src="./img/get-started/colum/01.png"
+                      alt="pets"
+                      width="298"
+                      height="301"
+                    />
+                  </div>
+                  <div class="item-getstarted__content">
+                    <div class="item-getstarted__title">Refer a Friend</div>
+                    <div class="item-getstarted__text">
+                      These dummy text is intended to show you<br />
+                      the volume of content.
+                    </div>
+                    <div class="item-getstarted__horline"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="getstarted__colum">
+                <div class="getstarted__item item-getstarted">
+                  <div class="item-getstarted__image">
+                    <img
+                      src="./img/get-started/colum/02.png"
+                      alt="pets"
+                      width="298"
+                      height="301"
+                    />
+                  </div>
+                  <div class="item-getstarted__content">
+                    <div class="item-getstarted__title">Refer a Friend</div>
+                    <div class="item-getstarted__text">
+                      These dummy text is intended to show you<br />
+                      the volume of content.
+                    </div>
+                    <div class="item-getstarted__horline"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="getstarted__colum">
+                <div class="getstarted__item item-getstarted">
+                  <div class="item-getstarted__image">
+                    <img
+                      src="./img/get-started/colum/03.png"
+                      alt="pets"
+                      width="298"
+                      height="301"
+                    />
+                  </div>
+                  <div class="item-getstarted__content">
+                    <div class="item-getstarted__title">Refer a Friend</div>
+                    <div class="item-getstarted__text">
+                      These dummy text is intended to show you<br />
+                      the volume of content.
+                    </div>
+                    <div class="item-getstarted__horline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__ourmission ourmission">
+          <div class="ourmission__container _container">
+            <div class="ourmission__content">
+              <div class="ourmission__block-text block-text">
+                <h2 class="block-text__title">Place a Sub-Heading Text Here</h2>
+                <div
+                  class="block-text__subtitle ourmission__block-text__subtitle"
+                >
+                  Our Mission
+                </div>
+                <div class="block-text__text">
+                  We are excited to post contents on the website. This space is
+                  reserved for more information about the company. These dummy
+                  text is intended to show you the volume of content.
+                </div>
+              </div>
+              <div class="ourmission__buttons">
+                <a href="#" class="ourmission__button">About Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="ourmission__image _ibg">
+            <img src="./img/our-mission/cover.jpg" alt="cover" />
+          </div>
+        </section>
+        <section class="main__submit submit">
+          <div class="submit__container _container">
+            <div class="submit__block-text block-text">
+              <h2 class="block-text__title">Reach Out to Us</h2>
+              <div class="block-text__subtitle submit__block-text__subtitle">
+                Drop Your Message
+              </div>
+              <div class="block-text__text">
+                We are excited to post contents on the website. This space is
+                reserved for more information about the company.
+              </div>
+            </div>
+            <form action="#" class="submit__form">
+              <input
+                type="text"
+                class="submit__input"
+                placeholder="Full Name"
+                required
+                autocomplete="off"
+                name="form[]"
+              />
+              <input
+                type="text"
+                class="submit__input"
+                placeholder="Email Address"
+                required
+                autocomplete="off"
+                name="form[]"
+              />
+              <input
+                type="text"
+                class="submit__input"
+                placeholder="Message"
+                required
+                autocomplete="off"
+                name="form[]"
+              />
+              <button type="submit" class="submit__button">SUBMIT</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <div class="footer__body">
+            <div class="footer__image">
+              <img src="./img/footer/image/welcome to.png" alt="pet" />
+            </div>
+            <div class="footer__content">
+              <div class="footer__content_top">
+                <div class="footer__block-text block-text">
+                  <h2 class="block-text__title footer__block-text__title">
+                    Get In Touch
+                  </h2>
+                  <div
+                    class="block-text__subtitle footer__block-text__subtitle"
+                  >
+                    Contact Us!
+                  </div>
+                  <div class="block-text__text footer__block-text__text">
+                    We are excited to post contents on the website. This space
+                    is reserved for more<br />
+                    information about the company.
+                  </div>
+                </div>
+                <div class="content__body">
+                  <div class="content__colum">
+                    <div class="content__item item-content">
+                      <div class="item-content__icon">
+                        <img
+                          src="./img/footer/icon/location.svg"
+                          alt="location"
+                        />
+                      </div>
+                      <div class="item-content__contacts">
+                        <a href="#" class="item-content__contacts_map"
+                          >123 Street Name, Address City Name, State 12345</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__colum">
+                    <div class="content__item item-content">
+                      <div class="item-content__icon">
+                        <img src="./img/footer/icon/mail.svg" alt="location" />
+                      </div>
+                      <div class="item-content__contacts">
+                        <a
+                          href="tel:1234567890"
+                          class="item-content__contacts_phone"
+                          >Phone Number: 123-456-7890</a
+                        >
+                        <a
+                          href="meilto:info@samplemail.com"
+                          class="item-content__contacts_email"
+                          >Email: info@samplemail.com</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__bottom">
+                <nav class="footer__bottom_menu">
+                  <ul class="footer__list">
+                    <li class="footer__link">
+                      <a href="#">Home</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#">About Us</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#">Our Products</a>
+                    </li>
+                    <li class="footer__link">
+                      <a href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="footer__bottom_horline"></div>
+                <div class="footer__bottom_copy">
+                  © Copyright 2021 | Lilo’s Pet Shop | All Right Reserved
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
